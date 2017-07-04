@@ -1216,6 +1216,61 @@ h1 .dimmed, .udem_coursehidden {
             }
         }
     }
+    .grading-report {
+        td.receivedgrade {
+            border-bottom: none;
+            &.c0 {
+                border-top: none;
+            }
+        }
+        td.givengrade {
+            border-bottom: none;
+            &.c1 {
+                border-top: none;
+            }
+        }
+    }
+    .assessmentdetails {
+        display: flex;
+        justify-content: center;
+        .userpicture {
+            border-radius: 50%;
+            margin: 5px;
+        }
+        .assessmentdetails-inner {
+            flex: 0 1 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            margin: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left:0px;
+            background-color: @white;
+            .grades {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                .gradelabel {
+                    flex: 1 1 50%;
+                }
+                .grade {
+                    flex: 1 1 auto;
+                    text-align: right;
+                }
+            }
+        }
+        .fullname {
+            font-weight: bold;
+            color: #1375c7;
+        }
+    }
+    .receivedgrade.null .assessmentdetails .fullname {
+        color: darken(red, 10%);
+    }
 }
 
 @media only screen and (max-width: 768px) {

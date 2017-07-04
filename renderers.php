@@ -26,4 +26,4 @@
 require_once('renderers/helper.php');
 require_once('renderers/core_renderer.php');
 require_once('renderers/maintenance_renderer.php');
-
+require_once('renderers/mod_workshop_renderer.php');

@@ -93,3 +93,6 @@ $string['studium'] = 'StudiUM';
 $string['udem'] = 'Université de Montréal';
 $string['useplaybuttonaslink'] = 'Use play video button as link';
 $string['useplaybuttonaslinkdesc'] = 'If checked, the slide link will be available in a play button on the center of the slide. This is useful when the slide link is a video. Otherwise, the link will be on the title of the slide.';
+$string['workshoppeergradelabel'] = 'Note:';
+$string['workshoppeerweightlabel'] = 'Weight:';
+$string['workshoppeergradinggradelabel'] = 'Grading grade:';

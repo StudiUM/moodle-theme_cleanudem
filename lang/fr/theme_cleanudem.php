@@ -92,3 +92,6 @@ $string['studium'] = 'StudiUM';
 $string['udem'] = 'Université de Montréal';
 $string['useplaybuttonaslink'] = 'Utiliser un bouton de lecture vidéo comme lien';
 $string['useplaybuttonaslinkdesc'] = 'Si cette option est cochée, le lien de la diapositive sera disponible dans un bouton de lecture sur le centre de la diapositive. C\'est utile lorsque la cible du lien est une vidéo. Dans le cas contraire, le lien sera sur le titre de la diapositive.';
+$string['workshoppeergradelabel'] = 'Note :';
+$string['workshoppeerweightlabel'] = 'Coefficient :';
+$string['workshoppeergradinggradelabel'] = 'Note de l\'évaluation :';
