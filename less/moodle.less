@@ -1158,53 +1158,63 @@ h1 .dimmed, .udem_coursehidden {
         content: "\f0d0";
         margin-right: 5px;
     }
-    .userplan dl.active {
-        margin-top: -5px;
-        padding: 0 0 10px;
-        position: relative;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    }
-    .userplan dl.active dt {
-        background-color: #5aaa09;
-        color:@white;
-        border-width: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .userplan dl.nonactive dt.nonactive,
-    .userplan dl.nonactive dl.nonactive {
-        padding-left:5px;
-    }
-    .userplan dl.active dd.active {
-        background-color: @white;
-        border: none;
-    }
-    .userplan dl dt {
-        background-color: darken(@studiumPrimaryColorMedium, 10%);
-        color:@white;
-    }
     .userplan {
         padding-bottom: 10px;
         padding-top: 15px;
         border:none;
-    }
-    .userplan dd {
-        border: none;
-        border-bottom: 1px solid #ddd;
-        background-color: @white;
-    }
-    .userplan dl:first-of-type {
-        border-left: 1px solid #ddd;
-        box-sizing: border-box;
-    }
-    .userplan dl:last-of-type {
-        border-right: 1px solid #ddd;
-        box-sizing: border-box;
-    }
-    .userplan div.actions a img {
-        .studium-white-filter();
+        dl.active {
+            margin-top: -5px;
+            padding: 0 0 10px;
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        dl.active dt {
+            background-color: #5aaa09;
+            color:@white;
+            border-width: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        dl.nonactive dt.nonactive,
+        dl.nonactive dl.nonactive {
+            padding-left:5px;
+        }
+        dl.active dd.active {
+            background-color: @white;
+            border: none;
+        }
+        dl dt {
+            background-color: darken(@studiumPrimaryColorMedium, 10%);
+            color:@white;
+        }
+        dd {
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background-color: @white;
+        }
+        dl:first-of-type {
+            border-left: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        dl:last-of-type {
+            border-right: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        div.actions {
+            img {
+                display: none;
+            }
+            a {
+                color: @white;
+                img {
+                    .studium-white-filter();
+                    display: inline-block;
+                    margin-left: 4px;
+                }
+            }
+        }
     }
 }
 
@@ -1212,54 +1222,53 @@ h1 .dimmed, .udem_coursehidden {
     .path-mod-workshop {
         .userplan {
             border: 1px solid #ddd;
-            border-top:none;
+            border-top: none;
             padding: 0;
-        }
-        .userplan dl.active dt.active {
-            padding-right: 5px;
-            display: block;
-            text-align: left;
-        }
-        .userplan dt,
-        .userplan dl.active dt
-        {
-            border-top: 1px solid #ddd;
-        }
-        .userplan dd,
-        .userplan dl.active dd.active {
-            border-color: #ddd #ddd currentcolor;
-            border-style: solid solid none;
-            border-width: 1px 0 0 1px;
-        }
-        .userplan dl.active dd.active {
-            background-color: rgba(90, 170, 9, 0.25);
-        }
-        .userplan dl:first-of-type {
-            border-left: none;
-        }
-        .userplan dl:last-of-type {
-            border-right: none;
-        }
-        .userplan dl.active {
-            box-shadow: none;
-            padding: 0;
-            margin: 0;
-        }
-        .userplan dl {
-            width: 105%;
+            dl.active dt.active {
+                padding-right: 5px;
+                display: block;
+                text-align: left;
+            }
+            dt,
+            dl.active dt
+            {
+                border-top: 1px solid #ddd;
+            }
+            dd,
+            dl.active dd.active {
+                border-color: #ddd #ddd currentcolor;
+                border-style: solid solid none;
+                border-width: 1px 0 0 1px;
+            }
+            dl.active dd.active {
+                background-color: rgba(90, 170, 9, 0.25);
+            }
+            dl:first-of-type {
+                border-left: none;
+            }
+            dl:last-of-type {
+                border-right: none;
+            }
+            dl.active {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+            }
+            dl {
+                width: 105%;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 420px) {
     .path-mod-workshop {
-        .userplan dt,
-        .userplan dl.active dt
-        {
-            width: 100%;
-        }
-        .userplan dl.active dd.active {
-            width: 100%;
+        .userplan {
+            dt,
+            dl.active dt,
+            dl.active dd.active {
+                width: 100%;
+            }
         }
     }
 }
